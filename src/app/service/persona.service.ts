@@ -9,8 +9,8 @@ import { environment } from 'src/environments/environment';
 })
 export class PersonaService {
 
-  /* URL: 'http://localhost:8088/' */
-
+  /* URL: 'http://localhost:8088/' */ 
+  
   URL = 'https://backend-7x8v.onrender.com/' + 'personas/';
 
   constructor(private httpClient: HttpClient) { }

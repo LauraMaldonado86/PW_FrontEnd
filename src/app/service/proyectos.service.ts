@@ -8,8 +8,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ProyectosService {
 
-  /* URL: 'http://localhost:8088/' */
-
+  /* URL: 'http://localhost:8088/' */ 
+  
   URL = 'https://backend-7x8v.onrender.com/' + 'proyectos/';
 
   constructor(private httpCliente: HttpClient) { }

@@ -9,9 +9,9 @@ import { environment } from 'src/environments/environment';
 })
 export class SExperienciaService {
 
-  /* URL: 'http://localhost:8088/' */
-
-  URL = 'https://backend-7x8v.onrender.com/' +'explab/';
+  /* URL: 'http://localhost:8088/' */ 
+  
+  URL = 'https://backend-7x8v.onrender.com/' + 'explab/';
 
   constructor(private httpCliente: HttpClient) { }
 
