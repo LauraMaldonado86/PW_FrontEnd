@@ -9,9 +9,9 @@ import { Skill } from '../model/skill';
 })
 export class SkillService {
 
-  /* URL: 'https://backend-7x8v.onrender.com/' */ 
-  
-  URL = 'http://localhost:8088/' + 'skill/';
+  /* URL: 'http://localhost:8088/' */
+
+  URL = 'https://backend-7x8v.onrender.com/' + 'skill/';
 
   constructor(private httpClient: HttpClient) { }
 

@@ -11,9 +11,9 @@ import { environment } from 'src/environments/environment';
 })
 export class AuthService {
  
-  /* URL: 'https://backend-7x8v.onrender.com/' */
+  /* URL: 'http://localhost:8088/' */
 
-  URL = 'http://localhost:8088/' + 'auth/';
+  URL = 'https://backend-7x8v.onrender.com/' + 'auth/';
 
   constructor(private httpClient: HttpClient) { }
 
