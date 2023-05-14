@@ -42,3 +42,8 @@ testem.log
 Thumbs.db
 /nbproject/private/
 /lauramaldonado/target/
+
+# Firebase
+.firebase
+*-debug.log
+.runtimeconfig.json

@@ -1,10 +1,12 @@
 .row{
     background-color: black;
+    font-family: 'Rajdhani';
+    font-weight: 500px;
 }
 
 footer{
     color: white;
-    font-size: 12px;
+    font-size: 14px;
     display: flex;
     flex-direction: column;
     text-align: center;

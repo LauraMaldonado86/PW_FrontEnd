@@ -2,16 +2,36 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { persona } from '../model/persona.model';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PersonaService {
-  URL = 'http://localhost:8088/personas/';
 
-  constructor(private http: HttpClient) { }
+  /* URL: 'https://backend-7x8v.onrender.com/' */
+  
+  URL = 'http://localhost:8088/' + 'personas/';
 
-  public getPersona(): Observable<persona>{
-    return this.http.get<persona>(this.URL+ 'traer/perfil');
+  constructor(private httpClient: HttpClient) { }
+
+  public lista(): Observable<persona[]>{
+    return this.httpClient.get<persona[]>(this.URL + 'lista');
   }
+
+  public detail(id: number): Observable<persona>{
+    return this.httpClient.get<persona>(this.URL + `detail/${id}`);
+  }
+
+  /*public save(educacion: Educacion): Observable<any>{
+    return this.httpCliente.post<any>(this.URL + `create`, educacion);
+  }*/
+
+  public update(id: number, Persona: persona): Observable<any>{
+    return this.httpClient.put<any>(this.URL + `update/${id}`, Persona);
+  }
+
+  /*public delete(id: number): Observable<any>{
+    return this.httpCliente.delete<any>(this.URL + `delete/${id}`);
+  }*/
 }

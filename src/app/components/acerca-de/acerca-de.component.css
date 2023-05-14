@@ -1,5 +1,7 @@
 .row{
     padding: 20px;
+    font-family: 'Rajdhani';
+    font-weight: 500px;
 }
 
 div{
@@ -15,7 +17,7 @@ div{
         width: 15%;
         border-radius: 100%;
         left: 3%;
-        top:500px;
+        top:630px;
     }
 }
 
@@ -26,12 +28,16 @@ div{
         border-radius: 100%;
         box-shadow: 3px 3px 3px grey;
         left: 33%;
-        top:600px;
+        top:550px;
     }
 }
 
 /* etiqueta nombre */
 #nombre{
     font-size: bold;
-    margin-top: 2%;
+    margin-top: 10%;
+}
+
+h5{
+    color:aqua;
 }

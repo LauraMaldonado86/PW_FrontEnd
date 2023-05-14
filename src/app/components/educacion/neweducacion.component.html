@@ -6,6 +6,12 @@
                     <label for="nombreE">Nombre de la institucion</label>
                     <input type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="nombreE" required [ngModelOptions]="{standalone: true}"/>
                 </div>
+<!-- Agrego campo con el periodo de tiempo de estudio-->
+                <div class="form-group">
+                    <label for="periodoE">Periodo</label>
+                    <input type="text" class="form-control" id="periodoE" name="periodoE" [(ngModel)]="periodoE" required [ngModelOptions]="{standalone: true}"/>
+                </div>
+
                 <div class="form-group">
                     <label for="descripcionE">Descripcion de sus estudios</label>
                     <input type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="descripcionE" required [ngModelOptions]="{standalone: true}"/>

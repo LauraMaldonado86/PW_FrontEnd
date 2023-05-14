@@ -2,12 +2,16 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Educacion } from '../model/educacion';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class EducacionService {
-  URL = 'http://localhost:8088/educacion/';
+
+  /* URL: 'https://backend-7x8v.onrender.com/' */
+  
+  URL = 'http://localhost:8088/' + 'educacion/';
 
   constructor(private httpCliente: HttpClient) { }
 

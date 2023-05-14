@@ -1,9 +1,31 @@
 .row{
-    background-color: black;
-    color: white;
     padding: 20px;
+    background-color: rgb(34, 34, 34);
+    border-radius: 20px;
+    width: 98%;
+    margin: 0 auto;
+    font-family: 'Rajdhani';
+    font-weight: 500px;
 }
 
-.contenedor{
-    width: auto;
+.contenedor-2{
+    padding: 5px;
+    background-color:rgb(22, 134, 134);
+    border-radius: 10px;
+    text-align: center;
 }
+
+div{
+    /*/background-color: rgb(121, 47, 90);*/
+    color: white;
+}
+
+h1, h3{
+    display: inline;
+}
+
+table{
+    color: white;
+    width: 105%;
+}
+
